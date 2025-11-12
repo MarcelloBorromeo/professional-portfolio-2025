@@ -4,179 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marcello Borromeo | Portfolio</title>
-  <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body>
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="header-logo">MB</div>
-    <div class="header-container">
-      <h1>Marcello Borromeo</h1>
-      <h2>Arizona State University</h2>
-      <h3>Incoming Product Manager @ Walmart</h3>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/marcelloborromeo/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/MarcelloBorromeo" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </header>
 
-  <!-- ===== NAVIGATION ===== -->
+<body>
+  <!-- NAVBAR -->
   <nav class="navbar">
+    <div class="logo">MB</div>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="my-story.html">My Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- ===== HERO / CAROUSEL ===== -->
-  <section id="home" class="carousel">
-    <div class="carousel-wrapper">
-      <div class="carousel-track">
-        <img src="waldde.jpg" alt="Walmart Supply Chain" />
-        <img src="walmart_pres.jpg" alt="Walmart Presentation" />
-        <img src="about_me_slide.png" alt="Break Through Tech AI" />
-        <img src="welde.png" alt="Walmart Defect Grading Flowchart" />
-        <!-- duplicates for seamless loop -->
-        <img src="waldde.jpg" alt="Walmart Supply Chain" />
-        <img src="walmart_pres.jpg" alt="Walmart Presentation" />
-        <img src="about_me_slide.png" alt="Break Through Tech AI" />
-        <img src="welde.png" alt="Walmart Defect Grading Flowchart" />
-      </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <h1>Marcello Borromeo</h1>
+      <p>Business & Data Science @ Arizona State University</p>
+      <a href="#experience" class="btn">Explore My Work</a>
     </div>
   </section>
 
-  <!-- ===== DIVIDER BAR ===== -->
-  <div class="divider teal"></div>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-    <div class="about-grid">
-      <div class="about-img">
-        <img src="cello_headshot_nice.jpg" alt="Marcello Borromeo Headshot" />
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m a student deeply invested in tech and small business, with a record of high performance both independently and on teams.
-          Currently balancing work at Walmart Global Tech, Break Through Tech AI, and a startup scaling effort in business analytics.
-          I’m driven to connect people, build things that matter, and use AI for good.
-        </p>
-        <h3>Core Skills</h3>
-        <ul>
-          <li>Technical Product Management (Agile, Shape Up, Jira)</li>
-          <li>Strategy (Ideation, Roadmapping, Execution)</li>
-          <li>Data Analysis (Python, SQL, Excel, Looker)</li>
-          <li>Human-Centered Design</li>
-          <li>Lead Acquisition</li>
-        </ul>
-      </div>
+  <!-- MY STORY -->
+<section class="my-story fade-in">
+  <div class="story-content">
+    <img src="images/cello_headshot_nice.jpg" alt="Marcello Borromeo Headshot" class="story-photo" />
+    <div class="story-text">
+      <h1>My Story</h1>
+      <p>
+        I’m Marcello Borromeo, a Business & Data Science student at Arizona State University passionate about blending
+        analytics with creativity to solve meaningful problems. My experience spans product management, software
+        engineering, and AI-driven business solutions across companies like Walmart, Insight, and YellowBird.
+      </p>
+      <p>
+        I focus on building tools that connect people and drive innovation. Outside of work, I explore how data and design
+        intersect to make technology more human-centered and impactful.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== DIVIDER BAR ===== -->
-  <div class="divider terracotta"></div>
-
-  <!-- ===== EXPERIENCE ===== -->
+  <!-- EXPERIENCE -->
   <section id="experience" class="experience">
-    <h2>Professional Experience</h2>
-    <div class="card-grid">
-      <div class="info-card">
-        <h3>Product Manager Intern</h3>
-        <h4>Walmart Global Tech</h4>
-        <em>May 2025 – Aug 2025 | Bentonville, AR</em>
-        <p>
-          Developed a feature for Walmart’s first AI supply chain product, driving a projected $2.2M cost reduction.
-          Authored PRD/BRD for a machine learning defect-grading model scaling inspection from 1% to 100% automation.
-        </p>
+    <h2>Experience</h2>
+    <div class="horizontal-scroll">
+      <div class="card">
+        <img src="logos/starbucks.png" alt="Starbucks">
+        <h3>Starbucks</h3>
+        <p class="subtitle">Product Research Intern</p>
+        <span>Aug 2023 – May 2023</span>
       </div>
 
-      <div class="info-card">
-        <h3>Software Engineer Intern</h3>
-        <h4>YellowBird</h4>
-        <em>Mar 2025 – May 2025 | Scottsdale, AZ</em>
-        <p>
-          Built a natural language SQL translation agent reducing query time by 50% and used by six Product Managers.
-          Co-led a 6-week sprint using Shape Up to deliver an MVP for deployment into backend/frontend systems.
-        </p>
+      <div class="card">
+        <img src="logos/insight.png" alt="Insight">
+        <h3>Insight</h3>
+        <p class="subtitle">Product Marketing Intern</p>
+        <span>May 2024 – Aug 2024</span>
       </div>
 
-      <div class="info-card">
-        <h3>Product Marketing Intern</h3>
-        <h4>Insight</h4>
-        <em>May 2024 – Aug 2024 | Chandler, AZ</em>
-        <p>
-          Boosted ROAS by 43.67% through data filtering in Excel + Copilot AI.
-          Delivered content to 28k+ recipients and represented intern cohort on company podcast about leadership.
-        </p>
+      <div class="card">
+        <img src="logos/yellowbird.png" alt="YellowBird">
+        <h3>YellowBird</h3>
+        <p class="subtitle">Software Engineer Intern</p>
+        <span>Mar 2025 – May 2025</span>
+      </div>
+
+      <div class="card">
+        <img src="logos/walmart.png" alt="Walmart Global Tech">
+        <h3>Walmart Global Tech</h3>
+        <p class="subtitle">Product Manager Intern</p>
+        <span>May 2025 – Aug 2025</span>
       </div>
     </div>
   </section>
 
-  <!-- ===== DIVIDER BAR ===== -->
-  <div class="divider teal"></div>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="projects">
-    <h2>Projects & Leadership</h2>
-    <div class="card-grid">
-      <div class="info-card">
-        <h3>Break Through Tech AI</h3>
-        <p>
-          Developing an AI investor matchmaking platform with LangGraph + XGBoost for International Elite Capital.
-        </p>
+  <!-- PROJECTS -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="horizontal-scroll">
+      <div class="card">
+        <h3>Cornell University</h3>
+        <p class="subtitle">Break Through Tech AI</p>
       </div>
 
-      <div class="info-card">
-        <h3>halfglasshustle</h3>
-        <p>
-          Co-founded a student-run incubator. Built a nutrition algorithm “Iwant_,” reaching 140+ MAUs with GTM plan.
-        </p>
+      <div class="card">
+        <h3>WalDDE</h3>
+        <p class="subtitle">AI Defect Inspector: Decision Tree Logic</p>
       </div>
 
-      <div class="info-card">
-        <h3>TAMID Group</h3>
-        <p>
-          Led a 5-student team to design an educational feature for a fintech app, enhancing retention and engagement.
-        </p>
+      <div class="card">
+        <h3>Brain and Gain Project</h3>
+        <p class="subtitle">Predictive Model for Muscle Mass</p>
+      </div>
+
+      <div class="card">
+        <h3>Data Navigator</h3>
+        <p class="subtitle">SQL Translation AI Agent</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== DIVIDER BAR ===== -->
-  <div class="divider terracotta"></div>
-
-  <!-- ===== TESTIMONIALS ===== -->
-  <section id="testimonials" class="testimonials">
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
     <h2>Testimonials</h2>
-    <div class="card-grid">
-      <div class="testimonial-card">
-        <p>“Marcello brings strategy and clarity to every discussion. His drive to innovate and empower others sets him apart.”</p>
-        <h4>— Sarah Nguyen, Product Lead, Walmart Global Tech</h4>
+
+    <div class="testimonial-card">
+      <p>
+        Marcello possesses an innate ability to weave together data insights with strategic business initiatives.
+        During my time guiding him at the Business Technology Analytics Association, his analytical prowess and
+        commitment to excellence consistently impressed me.
+        With a rare combination of technical expertise and market insight, Marcello is an invaluable asset to any team.
+        His collaborative spirit shines, especially in fast-paced environments, where he consistently delivers
+        high-quality work. He has a natural talent for elevating his peers, fostering a culture of shared knowledge and
+        continuous improvement.
+      </p>
+      <div class="testimonial-footer">
+        — Aasish Tammana
+        <span>Software Developer at Renesas | Ex-Deloitte | M.S. CS (AI) at ASU</span>
       </div>
-      <div class="testimonial-card">
-        <p>“An incredible collaborator with technical precision and creative insight. Marcello elevates every project he joins.”</p>
-        <h4>— Daniel Reyes, Software Engineer, YellowBird</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        Marcello is consistently a leader by example, adding value through thoughtful communication practices.
+        He prioritizes group goals over his own and continually makes sacrifices for the betterment of his peers.
+        Ambitious and responsible, he embraces growth opportunities and drives his team to success through collaboration
+        and initiative.
+      </p>
+      <div class="testimonial-footer">
+        — Joseph Aboudi
+        <span>DESRI Analyst</span>
       </div>
     </div>
   </section>
 
-  <!-- ===== DIVIDER BAR ===== -->
-  <div class="divider teal"></div>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <h2>Let’s Connect</h2>
-    <button class="contact-btn">Get in Touch</button>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Marcello Borromeo — Designed & Built by Marcello</p>
+    © 2025 Marcello Borromeo — Designed & Built by Marcello
   </footer>
 </body>
 </html>
