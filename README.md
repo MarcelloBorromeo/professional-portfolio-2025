@@ -1,4 +1,4 @@
-https://marcelloborromeo.github.io/Professional-Portfolio-2025/ [WORK IN PROGRESS]
+https://marcelloborromeo.github.io/professional-portfolio-2025/ [WORK IN PROGRESS]
 
 ## About My 2025 Professional Portfolio
 
